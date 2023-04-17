@@ -2,6 +2,10 @@
 
 <ul>
 <% Currency.keys.each do |key| %>
-  <li><%= "Convert 1 #{key} to..." %></li>
+  <li>
+  <a href = <%="/forex/#{key}/"%>> 
+  <%= "Convert 1 #{key} to..." %>
+  </a>
+  </li>
   <% end %>
 </ul>
